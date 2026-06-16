@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #4ade80;
+  --color-background: #00090e;
+  --color-surface: #1e293b;
+  --color-input: #2d2d2d;
+  --color-border: #404040;
+  --color-text: #f5f5f5;
+  --color-label: #d1d5db;
+  --color-muted: #9ca3af;
+  --color-heading: #ffffff;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-background);
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
